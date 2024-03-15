@@ -15,6 +15,14 @@ public class Client {
         return cpf;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCpf(long cpf) {
+        this.cpf = cpf;
+    }
+
     @Override
     public String toString() {
         return "Client{" +
@@ -22,4 +30,5 @@ public class Client {
                 ", cpf=" + cpf +
                 '}';
     }
+
 }
