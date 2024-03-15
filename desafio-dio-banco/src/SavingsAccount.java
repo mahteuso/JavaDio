@@ -8,7 +8,7 @@ public class SavingsAccount extends Account {
 
     public SavingsAccount(Client client, TypeAccount typeAccount) {
         super(client, typeAccount);
-
+       
     }
 
     @Override
