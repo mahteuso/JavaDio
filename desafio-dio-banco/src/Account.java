@@ -77,6 +77,7 @@ public abstract class Account implements IAccount {
         for (Client client : listClient){
             System.out.println(client);
         }
+        System.out.println("========================================");
     }
 
 }
