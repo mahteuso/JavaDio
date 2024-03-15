@@ -1,29 +1,16 @@
+import java.util.ArrayList;
 import java.util.List;
 
-public class CurrentAccount {
-    private int agency;
-    private int accountNumber;
+public class CurrentAccount extends Account{
     private double balance;
-    private List<Client> client;
+    TypeAccount typeAccount;
 
-    public CurrentAccount(int agency, int accountNumber, double balance){
-        this.agency = agency;
-        this.accountNumber = accountNumber;
-        this.balance = balance;
-    }
-    public void sacar(){}
-    public void depositar(){}
-    public void transferir(){}
-
-    public int getAgency() {
-        return agency;
+    public CurrentAccount(Client client, TypeAccount typeAccount) {
+        super(client, typeAccount);
     }
 
-    public int getAccountNumber() {
-        return accountNumber;
-    }
-
-    public double getBalance() {
-        return balance;
+    @Override
+    public void getBalance() {
+        super.getBalance();
     }
 }

@@ -1,27 +1,19 @@
-public class SavingsAccount {
-    private int agency;
-    private int accountNumber;
+import java.util.ArrayList;
+import java.util.List;
+
+public class SavingsAccount extends Account {
+
     private double balance;
+    TypeAccount typeAccount;
 
-    public SavingsAccount(int agency, int accountNumber, double balance){
-        this.agency = agency;
-        this.accountNumber = accountNumber;
-        this.balance = balance;
+    public SavingsAccount(Client client, TypeAccount typeAccount) {
+        super(client, typeAccount);
+        this.typeAccount = typeAccount;
     }
 
-    public void sacar(){}
-    public void depositar(){}
-    public void transferir(){}
-
-    public int getAgency() {
-        return agency;
+    @Override
+    public void getBalance() {
+        super.getBalance();
     }
 
-    public int getAccountNumber() {
-        return accountNumber;
-    }
-
-    public double getBalance() {
-        return balance;
-    }
 }

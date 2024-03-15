@@ -1,8 +1,8 @@
 public class Client {
     private String name;
-    private int cpf;
+    private long cpf;
 
-    public Client(String name, int cpf){
+    public Client(String name, long cpf){
         this.name = name;
         this.cpf = cpf;
     }
@@ -11,7 +11,15 @@ public class Client {
         return name;
     }
 
-    public int getCpf() {
+    public long getCpf() {
         return cpf;
+    }
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "name='" + name + '\'' +
+                ", cpf=" + cpf +
+                '}';
     }
 }
