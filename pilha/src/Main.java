@@ -19,5 +19,13 @@ public class Main {
         stack.getAll();
 
         System.out.println(stack.top());
+
+        stack.pop();
+        stack.getAll();
+        stack.pop();
+        stack.getAll();
+        stack.pop();
+        stack.getAll();
+        stack.pop();
     }
 }
