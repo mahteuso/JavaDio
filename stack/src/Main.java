@@ -16,16 +16,20 @@ public class Main {
         stack.push(terceiro);
 
         System.out.println(stack.isEmpty());
-        stack.getAll();
+        System.out.println(stack);
+
 
         System.out.println(stack.top());
 
         stack.pop();
-        stack.getAll();
+        System.out.println(stack);
         stack.pop();
-        stack.getAll();
+        System.out.println(stack);
+
         stack.pop();
-        stack.getAll();
+        System.out.println(stack);
+
         stack.pop();
+        System.out.println(stack);
     }
 }

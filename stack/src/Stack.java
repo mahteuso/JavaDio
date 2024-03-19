@@ -34,14 +34,24 @@ public class Stack<T> {
 
     }
 
-    public void getAll() {
+
+    @Override
+    public String toString() {
         Node localRefence = topReference;
-        System.out.println("======Total Elements======");
+        String stringRetorno = "============Total Elements===========\n";
+        if (topReference == null){
+            stringRetorno += "The stack is Empty\n";
+            stringRetorno += "=====================================\n";
+            return stringRetorno;
+        }
+
+
         while (localRefence != null) {
-            System.out.println(localRefence.getValue());
+            stringRetorno += "{Node[data=" + localRefence.getValue() + "]}\n";
             localRefence = localRefence.getNodeBellow();
         }
+        stringRetorno += "=====================================\n";
+
+        return stringRetorno;
     }
-
-
 }
