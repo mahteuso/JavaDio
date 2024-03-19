@@ -8,6 +8,7 @@ public class Node<T> {
 
     public Node(T value){
         this.value = value;
+        this.refNext = null;
     }
     public T getValue() {
         return value;
@@ -23,5 +24,12 @@ public class Node<T> {
 
     public void setRefNext(Node<T> refNext) {
         this.refNext = refNext;
+    }
+
+    @Override
+    public String toString() {
+        return "Node{" +
+                "value=" + value +
+                '}';
     }
 }
