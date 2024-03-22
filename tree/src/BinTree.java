@@ -132,7 +132,7 @@ public class BinTree<T extends Comparable<T>> {
                 father.setRightNode(local.getLeftNode());
             } else if (local.getRightNode() == null){
                 father.setRightNode(null);
-                
+
             }
         }
         System.out.println(content);
