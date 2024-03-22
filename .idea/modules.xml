@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/desafio-dio-processoseletivo/DesafioControleFluxo.iml" filepath="$PROJECT_DIR$/desafio-dio-processoseletivo/DesafioControleFluxo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/NewJavaDio.iml" filepath="$PROJECT_DIR$/.idea/NewJavaDio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collections/collections.iml" filepath="$PROJECT_DIR$/collections/collections.iml" />
       <module fileurl="file://$PROJECT_DIR$/desafio-dio-banco/desafio-dio-banco.iml" filepath="$PROJECT_DIR$/desafio-dio-banco/desafio-dio-banco.iml" />
       <module fileurl="file://$PROJECT_DIR$/list/list.iml" filepath="$PROJECT_DIR$/list/list.iml" />
       <module fileurl="file://$PROJECT_DIR$/stack/pilha.iml" filepath="$PROJECT_DIR$/stack/pilha.iml" />
