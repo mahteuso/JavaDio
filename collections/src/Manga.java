@@ -5,6 +5,8 @@ public class Manga implements Comparable<Manga>{
 
     private String name;
     private Integer episodesNumber;
+
+    private Integer likes;
    public List<Manga> listManga = new ArrayList<>();
 
     public Manga(){
@@ -14,6 +16,11 @@ public class Manga implements Comparable<Manga>{
     public Manga(String name, Integer episodesNumber) {
         this.name = name;
         this.episodesNumber = episodesNumber;
+    }
+
+    public Manga(String name, Integer episodesNumber, Integer likes){
+        this(name, episodesNumber);
+        this.likes = likes;
     }
 
     public String getName() {
@@ -39,11 +46,20 @@ public class Manga implements Comparable<Manga>{
         return this.getName().compareTo(o.getName());
     }
 
+    public Integer getLikes() {
+        return likes;
+    }
+
+    public void setLikes(Integer likes) {
+        this.likes = likes;
+    }
+
     @Override
     public String toString() {
         return "Manga{" +
                 "name='" + name + '\'' +
                 ", episodesNumber=" + episodesNumber +
+                ", likes=" + likes +
                 '}';
     }
 }
