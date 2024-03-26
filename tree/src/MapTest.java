@@ -33,5 +33,16 @@ public class MapTest {
 
         System.out.println(alunos);
 
+     /*  for (String key : aluno3.keySet()){
+           String value = aluno3.get(key);
+           System.out.println(key + " = " + value);
+       }*/
+
+       for (Map aluno : alunos){
+           for (Object key : aluno.keySet()){
+               Object value = aluno.get(key);
+               System.out.println(key + " = " + value);
+           }
+       }
     }
 }
