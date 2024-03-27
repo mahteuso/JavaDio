@@ -14,17 +14,35 @@ public class TestMaps {
         Manga m3 = new Manga("Berseker", 6000);
         Manga m4 = new Manga("Kingdom", 3029);
 
-        List<Manga> cost1ListManga = List.of(m1, m3, m4);
-        List<Manga> cost2ListManga = List.of(m1, m2, m3);
+        System.out.println(costumer1);
+        System.out.println("---------------------");
+        System.out.println(costumer2);
+        System.out.println("---------------------");
 
-        Map<Costumer, List<Manga>> costManga = new HashMap<>();
-        costManga.put(costumer1, cost1ListManga);
-        costManga.put(costumer2, cost2ListManga);
+        List<Manga> mangas = List.of(m1, m2, m3, m4);
+        System.out.println("============ Manga's list ================");
+        System.out.print("[");
+        for (Manga manga : mangas){
+            if (manga.getName().equals(mangas.getLast().getName())){
+                System.out.print(manga.getName());
+            } else {
+                System.out.print(manga.getName() + ", ");
+            }
+        }
 
-        for (Costumer key : costManga.keySet()) {
-            System.out.print(key.getName() + " =[");
-            for (Manga manga : costManga.get(key)) {
-                if (costManga.get(key).getLast().getName().equals(manga.getName())) {
+        List<Manga> mangasCost1 = List.of(m1, m2, m4);
+        List<Manga> mangasCost2 = List.of(m2, m3, m4);
+        System.out.println("]");
+        System.out.println("-------------------------------------------");
+
+        Map<Costumer, List<Manga>> costListManga = new HashMap<>();
+        costListManga.put(costumer1, mangasCost1);
+        costListManga.put(costumer2, mangasCost2);
+
+        for(Costumer key : costListManga.keySet()){
+            System.out.print(key.getName() + " = [");
+            for (Manga manga : costListManga.get(key)){
+                if (costListManga.get(key).getLast().getName().equals(manga.getName())){
                     System.out.print(manga.getName());
                 } else {
                     System.out.print(manga.getName() + ", ");
@@ -32,8 +50,6 @@ public class TestMaps {
             }
             System.out.println("]");
         }
-
-
     }
 
 }
