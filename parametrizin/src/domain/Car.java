@@ -39,7 +39,7 @@ public class Car implements Comparable<Car>{
 
     @Override
     public int compareTo(Car car) {
-        return this.getModel().compareTo(car.getModel());
+        return this.getModel().compareToIgnoreCase(car.getModel());
     }
 
     @Override
