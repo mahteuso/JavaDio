@@ -11,7 +11,7 @@ public class WildCardsTest {
         System.out.println("-----------------------");
         appoitment(cats);
         appointmentAnimal(animals);
-     }  
+     }
 
      public static void appoitment(List<? extends Animal> animals){
           for (Animal animal : animals){
