@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/desafio-dio-banco/desafio-dio-banco.iml" filepath="$PROJECT_DIR$/desafio-dio-banco/desafio-dio-banco.iml" />
       <module fileurl="file://$PROJECT_DIR$/innerclasses/innerclasses.iml" filepath="$PROJECT_DIR$/innerclasses/innerclasses.iml" />
       <module fileurl="file://$PROJECT_DIR$/list/list.iml" filepath="$PROJECT_DIR$/list/list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parametrizin/parameterizingbehavior.iml" filepath="$PROJECT_DIR$/parametrizin/parameterizingbehavior.iml" />
       <module fileurl="file://$PROJECT_DIR$/stack/pilha.iml" filepath="$PROJECT_DIR$/stack/pilha.iml" />
       <module fileurl="file://$PROJECT_DIR$/queue/queue.iml" filepath="$PROJECT_DIR$/queue/queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/src.iml" filepath="$PROJECT_DIR$/src/src.iml" />
