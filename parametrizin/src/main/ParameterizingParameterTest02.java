@@ -16,12 +16,7 @@ public class ParameterizingParameterTest02 {
     );
 
     public static void main(String[] args) {
-       List<Car> vermelho =  filterCar(cars, new CarPredicate() {
-            @Override
-            public boolean test(Car car) {
-                return car.getColor().equalsIgnoreCase("vermelho");
-            }
-        });
+       List<Car> vermelho =  filterCar(cars, car -> car.getColor().equalsIgnoreCase("vermelho"));
 
         System.out.println(vermelho);
     }
