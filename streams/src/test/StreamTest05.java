@@ -42,9 +42,20 @@ public class StreamTest05 {
 
         List<Integer> list = new ArrayList<>();
         List<Integer> fibo = fibonacciTwo(7, 0, 0, 0, list);
-        System.out.print("Fibocacci Sequency = [");
-        for (int i : fibo){
-            if (fibo.getLast() == i){
+        System.out.print("Fibocacci Sequency Recursivo = [");
+        for (int i : fibo) {
+            if (fibo.getLast() == i) {
+                System.out.println(i + "]");
+            } else {
+                System.out.print(i + ", ");
+            }
+        }
+        System.out.println();
+        List<Integer> newList = new ArrayList<>();
+        List<Integer> fibonacci = fibo(7, 0, 0, 0, newList);
+        System.out.print("Fibocacci Sequency Estruturado = [");
+        for (int i : fibonacci){
+            if (fibonacci.getLast() == i){
                 System.out.println(i + "]");
             } else {
                 System.out.print(i + ", ");
@@ -89,6 +100,25 @@ public class StreamTest05 {
         } else {
             return list;
         }
+    }
+
+    private static List<Integer> fibo(Integer limit, Integer size, Integer init, Integer fim, List<Integer> list) {
+        while (size < limit) {
+            if (init == 0 && fim == 0) {
+                fim = init + 1;
+                list.add(init);
+                list.add(fim);
+
+            }else if(fim != 0){
+                Integer temp = fim;
+                fim = init + fim;
+                init = temp;
+
+                list.add(fim);
+            }
+            size++;
+        }
+        return list;
     }
 
 }
