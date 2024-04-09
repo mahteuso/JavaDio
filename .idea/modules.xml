@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/collections/collections.iml" filepath="$PROJECT_DIR$/collections/collections.iml" />
       <module fileurl="file://$PROJECT_DIR$/desafio-dio-banco/desafio-dio-banco.iml" filepath="$PROJECT_DIR$/desafio-dio-banco/desafio-dio-banco.iml" />
       <module fileurl="file://$PROJECT_DIR$/innerclasses/innerclasses.iml" filepath="$PROJECT_DIR$/innerclasses/innerclasses.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc/jdbc.iml" filepath="$PROJECT_DIR$/jdbc/jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/lambdas/lambdas.iml" filepath="$PROJECT_DIR$/lambdas/lambdas.iml" />
       <module fileurl="file://$PROJECT_DIR$/list/list.iml" filepath="$PROJECT_DIR$/list/list.iml" />
       <module fileurl="file://$PROJECT_DIR$/parametrizin/parameterizingbehavior.iml" filepath="$PROJECT_DIR$/parametrizin/parameterizingbehavior.iml" />

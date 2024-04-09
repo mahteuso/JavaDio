@@ -1,5 +1,6 @@
 package domain;
 
+import javax.swing.*;
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
 
@@ -20,23 +21,34 @@ public class Members {
 
     public void addMemberEmail(String email) {
         synchronized (emails) {
-            System.out.println(Thread.currentThread().getName() + " Adicionando email na lista");
             emails.add(email);
+            System.out.println(Thread.currentThread().getName() + " Adicionou email: " + email + " na lista");
             emails.notifyAll();
         }
     }
 
+    public String emailSend(){
+        return emails.poll();
+    }
     public void retrieveEmail() {
-        System.out.println(Thread.currentThread().getName() + " Checando se term emails");
+        System.out.println(Thread.currentThread().getName() + " Checando se têm emails");
         synchronized (emails) {
             while (open) {
-                if (emails.isEmpty()) break;
+                if (emails.isEmpty()) {
+                    String email = "Julia@ufscar.br";
+                    addMemberEmail(email);
+                    String name = emailSend();
+                    System.out.println(Thread.currentThread().getName() + " enviou o email: " + name );
+                    if (emails.isEmpty()) {
+                        close();
+                        break;
+                    }
+                }
                 System.out.println(Thread.currentThread().getName() + " Esperando liberação de email");
                 try {
                     System.out.println(Thread.currentThread().getName() + " Esperando email, entrando em modo de espera");
                     emails.wait();
-                    String email = emails.poll();
-                    System.out.println(Thread.currentThread().getName() + " Acabou de recolher o email" + email);
+
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
